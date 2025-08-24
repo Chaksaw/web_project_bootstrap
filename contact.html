@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Contacter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  
+</head>
+<body>
+
+<!-- Navbar container -->
+<div id="navbar"></div>
+
+
+<div class="container">
+    <h1>Nous contacter</h1>
+    <form id="form-contact" name="form-contact" method="post" action="#">
+        <div class="mb-5 row">
+            <div class="col">
+                <label for="prenom" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="prenom" name="prenom"
+                    placeholder="Veuillez entrer votre prénom" required>
+            </div>
+            <div class="col">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" name="nom" 
+                       placeholder="Veuillez entrer votre nom" required>
+            </div>
+        </div>
+        <div class="mb-5 row">
+            <div class="col">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email"
+                    placeholder="Veuillez entrer votre email" required>
+            </div>
+            <div class="col">
+                <label for="cell" class="form-label">Cellulaire</label>
+                <input type="tel" id="cell" name="cell" placeholder="123-456-7890" 
+                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>                    
+            </div>
+            
+        </div>
+        <div class="mb-5">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Soumettre</button>
+    </form>
+</div>
+
+<!-- Pied de page -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 Nom du Site. Tous droits réservés.</p>
+    <div class="footer-icons">
+        <a href="https://linkedin.com" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" class="text-white mx-2"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+
+<!-- Scripts JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./scripts/main.js"></script>
+</body>
+</html>
